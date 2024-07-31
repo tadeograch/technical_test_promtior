@@ -13,3 +13,4 @@ tavily-python
 unstructured
 pypdf
 playwright
+sse_starlette
