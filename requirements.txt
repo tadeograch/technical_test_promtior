@@ -1,0 +1,15 @@
+fastapi
+langchain
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+langchain-core
+langchainhub
+langchain-community
+langserve
+faiss-cpu
+beautifulsoup4
+tavily-python
+unstructured
+pypdf
+playwright
