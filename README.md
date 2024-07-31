@@ -7,6 +7,7 @@ content of the Promtior website, based on the LangChain library.
 This chatbot was built in python, using LangChain framework and OpenAI model. Based on [LangChain documentation](https://python.langchain.com/v0.1/docs/get_started/quickstart/).
 ## Architecture
 <img src="https://github.com/tadeograch/technical_test_promtior/blob/test/docs/promtior_chatbot_diagram.png/">
+
 ## Installation
 
 Clone the repository of the Promtior chatbot project
