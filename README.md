@@ -32,7 +32,7 @@ And to ask something you can run the client.py with your custom question, for ex
 ```bash
 python client.py "What services does Promtior offer?"
 ```
-Or you can interact with LangServe Playground:
+Or you can interact with LangServe Playground on your browser:
 ```bash
 http://localhost:8000/promtior_chatbot/playground
 ```
