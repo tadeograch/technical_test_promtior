@@ -1,0 +1,6 @@
+[tool.poetry]
+name = "promtior-chat-railway-template"
+version = "0.1.0"
+description = ""
+authors = ["Tadeo Grach"]
+readme = "README.md"
