@@ -1,10 +1,10 @@
 # Promtior chatbot
 
 A chatbot assistant that uses the RAG architecture to answer questions about the
-content of the Promtior website, based on the LangChain library.
+content of the Promtior website, based on the LangChain library. 
 
 ## Technologies
-This chatbot was built in python, using LangChain framework and OpenAI model. Based on [LangChain documentation](https://python.langchain.com/v0.1/docs/get_started/quickstart/).
+This chatbot was built in python, using LangChain framework and OpenAI model. Based on [LangChain documentation](https://python.langchain.com/v0.1/docs/get_started/quickstart/) and deployed with Railway.
 ## Architecture
 <img src="https://github.com/tadeograch/technical_test_promtior/blob/test/docs/promtior_chatbot_diagram.png/">
 
@@ -36,6 +36,13 @@ Or you can interact with LangServe Playground on your browser:
 ```bash
 http://localhost:8000/promtior_chatbot/playground
 ```
+
+## Aditional
+
+###[Promtior Chatbot](https://technicaltestpromtior-production.up.railway.app/promtior_chatbot/playground/)
+
+Check the promtior chatbot running in Railway
+
 ## Overview
 
 This project was created as a technical test, presenting a new challenge for someone unfamiliar with Retrieval Augmented Generation. Learning something new is never easy, but I know this is only the beginning of the journey.

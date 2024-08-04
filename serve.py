@@ -48,6 +48,8 @@ prompt = ChatPromptTemplate.from_messages([
     ("human", "{input} {agent_scratchpad}"),
 ])
 
+
+
 llm = ChatOpenAI( model="gpt-3.5-turbo", temperature=0)
 agent = create_openai_tools_agent(llm, tools,prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
@@ -60,23 +62,19 @@ app = FastAPI(
 
 class Input(BaseModel):
     input: str
-    chat_history: List[HumanMessage | AIMessage | SystemMessage] = Field(
-        ...,
+    chat_history: List[Union[HumanMessage, AIMessage, SystemMessage]] = Field(
+        default_factory=list,
         description="The chat messages representing the current conversation.",
     )
 
 class Output(BaseModel):
     output: str
 
-playground_compatible_agent_executor = (
-    agent_executor | (lambda x: x["output"])
-).with_types(input_type=Input, output_type=Output)
-
 add_routes(
     app,
-    playground_compatible_agent_executor,
+    agent_executor.with_types(input_type=Input, output_type=Output),
     path="/promtior_chatbot",
-    playground_type="chat"
+    playground_type="default"
 )
 
 if __name__ == "__main__":
